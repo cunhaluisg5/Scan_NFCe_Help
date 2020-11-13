@@ -6,6 +6,8 @@ import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
 
+import Logo from '../assets/img/logo.png';
+
 function Navbar() {
   const [sidebar, setSidebar] = useState(true);
 
@@ -13,7 +15,7 @@ function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{ color: '#FF870F' }}>
         <div className='navbar'>
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
@@ -25,6 +27,7 @@ function Navbar() {
               <Link to='#' className='menu-bars'>
                 <AiIcons.AiOutlineClose />
               </Link>
+              <img className='logo' src={Logo} />
             </li>
             {SidebarData.map((item, index) => {
               return (
