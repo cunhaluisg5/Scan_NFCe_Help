@@ -117,8 +117,12 @@
 
   .verticalImage {
     width: 400px;
+    background-color: #213e6d;
+    padding: 5px;
   }
 
   .horizontalImage {
     width: 800px;
+    background-color: #213e6d;
+    padding: 5px;
   }
