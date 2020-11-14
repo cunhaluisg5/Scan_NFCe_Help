@@ -10,16 +10,16 @@ export default function Authentication() {
         <div className='container'>
             <h1>Autenticação</h1>
             <p>Para autenticação no aplicativo, basta seguir os passos mostrados abaixo.</p>
-                <h3>1 - Acesse a tela de autenticação</h3>
-                <img className='verticalImage' src={AuthenticationImage1} />
-                <h3>2 - Preencha as informações</h3>
-                <p>Preencha corretamente "E-mail" e "Senha".</p>
-                <img className='verticalImage' src={AuthenticationImage2} />
-                <h3>3 - Confirmar Acesso</h3>
-                <p>Estando todas as informações preenchidas, é necessário apenas clicar no botão "Entrar"
+            <h3>1 - Acesse a tela de autenticação</h3>
+            <img className='verticalImage' src={AuthenticationImage1} />
+            <h3>2 - Preencha as informações</h3>
+            <p>Preencha corretamente "E-mail" e "Senha".</p>
+            <img className='verticalImage' src={AuthenticationImage2} />
+            <h3>3 - Confirmar Acesso</h3>
+            <p>Estando todas as informações preenchidas, é necessário apenas clicar no botão "Entrar"
                 e, se as informações forem válidas, o acesso ao aplicativo será liberado.
-              </p>
-                <img className='verticalImage' src={AuthenticationImage3} />
+            </p>
+            <img className='verticalImage' src={AuthenticationImage3} />
         </div>
     )
 }
