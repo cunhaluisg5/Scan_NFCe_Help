@@ -115,6 +115,10 @@
     color: #ccc
   }
 
-  img {
+  .verticalImage {
     width: 400px;
+  }
+
+  .horizontalImage {
+    width: 800px;
   }
