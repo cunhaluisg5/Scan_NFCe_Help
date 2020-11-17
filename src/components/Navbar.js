@@ -27,7 +27,7 @@ function Navbar() {
               <Link to='#' className='menu-bars'>
                 <AiIcons.AiOutlineClose />
               </Link>
-              <img className='logo' src={Logo} />
+              <img className='logo' src={Logo} alt='Image1' />
             </li>
             {SidebarData.map((item, index) => {
               return (

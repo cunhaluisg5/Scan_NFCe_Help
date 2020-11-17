@@ -11,7 +11,7 @@ export default function GradesListing() {
             <h3>1 - Exibir as notas cadastradas</h3>
             <p>Para listagem das notas, basta acessar a tela "Início" do aplicativo.</p>
             <p>Se houver alguma nota cadastrada ela será exibida, como na imagem abaixo.</p>
-            <img className='verticalImage' src={GradesListingImage1} />
+            <img className='verticalImage' src={GradesListingImage1} alt='Image1' />
             <h3>2 - Acesse informações detalhadas</h3>
             <p>Para ter acesso a maiores informações da nota, basta clicar sobre ela e informações 
                 complementares serão exibidas, como itens presentes e valor ICMS.
@@ -19,7 +19,7 @@ export default function GradesListing() {
             <p>Nesta tela é possível excluir a nota da base de dados, para isso, é necessário clicar no 
                 ícone de lixeira situado no menu superior à direita.
             </p>
-            <img className='verticalImage' src={GradesListingImage2} />
+            <img className='verticalImage' src={GradesListingImage2} alt='Image2' />
         </div>
     )
 }
