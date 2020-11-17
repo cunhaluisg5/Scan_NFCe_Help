@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route path='/register' exact component={Register} />
+          <Route path='/register' component={Register} />
           <Route path='/authentication' component={Authentication} />
           <Route path='/codeReading' component={CodeReading} />
           <Route path='/configurations' component={Configurations} />
