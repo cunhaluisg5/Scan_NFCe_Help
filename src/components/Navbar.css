@@ -2,9 +2,11 @@
 .navbar {
     background-color: #060b26;
     height: 80px;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 250px;
   }
   
   .menu-bars {
@@ -74,7 +76,7 @@
   .container {
     text-align: center;
     background: #142541;
-    width: 80%;
+    width: 100%;
     margin-left: 250px;
   }
 
