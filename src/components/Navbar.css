@@ -75,7 +75,6 @@
   .container {
     text-align: center;
     background: #142541;
-    width: 100%;
   }
 
   .text-alert {
@@ -116,13 +115,13 @@
   }
 
   .verticalImage {
-    width: 400px;
+    width: 250px;
     background-color: #213e6d;
     padding: 5px;
   }
 
   .horizontalImage {
-    width: 800px;
+    width: 450px;
     background-color: #213e6d;
     padding: 5px;
   }

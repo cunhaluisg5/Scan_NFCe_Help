@@ -38,8 +38,8 @@ export default function ResetPassword() {
             </p>
             <img className='horizontalImage' src={ResetPasswordImage6} alt='Image6' />
             <h3>7 - Senha Redefinida</h3>
-            <p>Estando as informações preenchidas corretamente, basta clicar no botão "Redefinir Senha" e uma nova
-                senha será cadastrada para o usuário.
+            <p>Estando as informações preenchidas corretamente, basta clicar no botão "Redefinir Senha" e 
+                uma nova senha será cadastrada para o usuário.
             </p>
             <img className='horizontalImage' src={ResetPasswordImage7} alt='Image7' />
         </div>
