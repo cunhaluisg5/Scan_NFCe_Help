@@ -1,4 +1,8 @@
-
+<p align="center">
+    <img alt="Tasks" src="https://raw.githubusercontent.com/cunhaluisg5/Scan_NFCe_Help/master/screens/01_Scan_NFCe_Help.jpg" width="18%">
+	<img alt="Tasks" src="https://raw.githubusercontent.com/cunhaluisg5/Scan_NFCe_Help/master/screens/02_Scan_NFCe_Help.jpg" width="18%">
+	<img alt="Tasks" src="https://raw.githubusercontent.com/cunhaluisg5/Scan_NFCe_Help/master/screens/03_Scan_NFCe_Help.jpg" width="18%">
+</p>
 
 ## Scan NFC-e Help
 
