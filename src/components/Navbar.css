@@ -4,7 +4,7 @@
     height: 80px;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
   }
   
@@ -124,4 +124,11 @@
     width: 450px;
     background-color: #213e6d;
     padding: 5px;
+  }
+
+  .alignText {
+    margin-right: 20px;
+    color: #FF870F;
+    background-color: #060b26;
+    text-decoration: none;
   }

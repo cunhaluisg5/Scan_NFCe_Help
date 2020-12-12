@@ -10,6 +10,7 @@ import Logout from './pages/Logout';
 import Register from './pages/Register';
 import ResetPassword from './pages/ResetPassword';
 import SpendingAnalysis from './pages/SpendingAnalysis';
+import ProductsAnalysis from './pages/ProductsAnalysis';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/logout' component={Logout} />
           <Route path='/resetPassword' component={ResetPassword} />
           <Route path='/spendingAnalysis' component={SpendingAnalysis} />
+          <Route path='/productsAnalysis' component={ProductsAnalysis} />
         </Switch>
       </BrowserRouter>
     </>

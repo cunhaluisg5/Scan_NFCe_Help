@@ -20,6 +20,9 @@ function Navbar() {
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
+          <a href='https://github.com/cunhaluisg5/Scan_NFCe_Help' target="_blank" className='alignText' 
+            rel='noopener noreferrer'>Code on GitHub
+          </a>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>

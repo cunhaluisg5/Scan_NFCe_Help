@@ -10,9 +10,9 @@ export default function Register() {
         <div className='container'>
             <h1>Cadastro</h1>
             <p>Para cadastro no aplicativo, basta seguir os passos mostrados abaixo.</p>
-            <h3>1 - Acesse a tela de cadastro</h3>
+            <h3>1 - Acessar a tela de cadastro</h3>
             <img className='verticalImage' src={RegisterImage1} alt='Image1' />
-            <h3>2 - Preencha as informações corretamente</h3>
+            <h3>2 - Preencher as informações corretamente</h3>
             <p>É preciso preencher os campos "Nome", "E-mail", "Senha" e "Confirmação".</p>
             <p className='text-alert'>Importante informar um e-mail válido, pois através
             dele, a senha poderá ser redefinida caso necessário.</p>
