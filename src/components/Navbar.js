@@ -8,6 +8,8 @@ import { IconContext } from 'react-icons';
 
 import Logo from '../assets/img/logo.png';
 
+const repositoryUrl = process.env.REACT_APP_HELP_REPOSITORY_URL || 'https://github.com/cunhaluisg5/Scan_NFCe_Help';
+
 function Navbar() {
   const [sidebar, setSidebar] = useState(true);
 
@@ -20,7 +22,7 @@ function Navbar() {
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-          <a href='https://github.com/cunhaluisg5/Scan_NFCe_Help' target="_blank" className='alignText' 
+          <a href={repositoryUrl} target="_blank" className='alignText'
             rel='noopener noreferrer'>Code on GitHub
           </a>
         </div>
