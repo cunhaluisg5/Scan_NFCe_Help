@@ -7,13 +7,15 @@ Central de ajuda web do ecossistema Scan NFC-e, usada para orientar o usuario na
 - apresentar passo a passo das funcionalidades
 - servir como camada de apoio ao onboarding
 - apontar para documentacao tecnica e operacional
+- concentrar o acesso oficial a documentacao da API
 
 ## Variaveis de ambiente
 
 Crie um `.env` a partir de `.env.example`.
 
 - `REACT_APP_HELP_REPOSITORY_URL`: URL publica do repositorio da ajuda
-- `REACT_APP_API_DOCS_URL`: URL da documentacao Swagger/OpenAPI do backend
+- `REACT_APP_API_DOCS_URL`: URL do Swagger UI do backend
+- `REACT_APP_API_DOCS_JSON_URL`: URL do OpenAPI JSON do backend
 
 ## Scripts
 
@@ -29,5 +31,6 @@ npm test
 Esta fase entrega:
 
 - configuracao basica por ambiente
-- remocao de link hardcoded do repositorio
+- remocao de links hardcoded principais
 - documentacao inicial do projeto
+- pagina dedicada para a documentacao oficial da API

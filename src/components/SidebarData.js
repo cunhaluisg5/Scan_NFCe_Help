@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 
 export const SidebarData = [
@@ -9,13 +9,13 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'Autenticação',
+        title: 'Autenticacao',
         path: "/authentication",
         icon: <FaIcons.FaKey />,
         cName: 'nav-text'
     },
     {
-        title: 'Redefinição de Senha',
+        title: 'Redefinicao de Senha',
         path: "/resetPassword",
         icon: <FaIcons.FaMailBulk />,
         cName: 'nav-text'
@@ -27,27 +27,33 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'Leitura de Código',
+        title: 'Leitura de Codigo',
         path: "/codeReading",
         icon: <FaIcons.FaQrcode />,
         cName: 'nav-text'
     },
     {
-        title: 'Análise de Gastos',
+        title: 'Analise de Gastos',
         path: "/spendingAnalysis",
         icon: <FaIcons.FaChartLine />,
         cName: 'nav-text'
     },
     {
-        title: 'Análise de Produtos',
+        title: 'Analise de Produtos',
         path: "/productsAnalysis",
         icon: <FaIcons.FaChartLine />,
         cName: 'nav-text'
     },
     {
-        title: 'Configurações',
+        title: 'Configuracoes',
         path: "/configurations",
         icon: <FaIcons.FaCog />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Documentacao da API',
+        path: "/apiDocs",
+        icon: <FaIcons.FaBook />,
         cName: 'nav-text'
     },
     {

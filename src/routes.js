@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter , Switch, Route } from 'react-router-dom';
@@ -11,6 +11,7 @@ import Register from './pages/Register';
 import ResetPassword from './pages/ResetPassword';
 import SpendingAnalysis from './pages/SpendingAnalysis';
 import ProductsAnalysis from './pages/ProductsAnalysis';
+import ApiDocs from './pages/ApiDocs';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/resetPassword' component={ResetPassword} />
           <Route path='/spendingAnalysis' component={SpendingAnalysis} />
           <Route path='/productsAnalysis' component={ProductsAnalysis} />
+          <Route path='/apiDocs' component={ApiDocs} />
         </Switch>
       </BrowserRouter>
     </>
