@@ -5,7 +5,7 @@ function FlowPreview({ card, compact = false }) {
     <article className={`flow-preview flow-preview--${card.tone || 'teal'}${compact ? ' is-compact' : ''}`}>
       <div className='flow-preview__top'>
         <span className='flow-preview__eyebrow'>{card.eyebrow}</span>
-        <span className='flow-preview__status'>Fluxo atual</span>
+        <span className='flow-preview__status'>Exemplo de uso</span>
       </div>
       <h3>{card.title}</h3>
       <p>{card.caption}</p>
@@ -26,3 +26,4 @@ function FlowPreview({ card, compact = false }) {
 }
 
 export default FlowPreview;
+

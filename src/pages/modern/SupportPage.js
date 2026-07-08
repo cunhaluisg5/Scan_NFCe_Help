@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { faq, supportLinks, topics } from '../../content/helpContent';
 
 function SupportPage() {
@@ -6,10 +6,10 @@ function SupportPage() {
     <div className='page-stack'>
       <section className='section-block docs-hero'>
         <div className='section-heading compact'>
-          <span className='eyebrow'>Suporte e orientacao</span>
-          <h1>FAQ, repositorios e atalhos de suporte</h1>
+          <span className='eyebrow'>Suporte e orientação</span>
+          <h1>FAQ, repositórios e atalhos de suporte</h1>
           <p>
-            Reunimos aqui as perguntas que mais destravam usuarios e mantenedores, com links diretos para a documentacao da API e para os repositorios do ecossistema.
+            Reunimos aqui as perguntas mais importantes, com links diretos para a documentação da API e para os repositórios do ecossistema.
           </p>
         </div>
       </section>
@@ -32,20 +32,20 @@ function SupportPage() {
 
         <aside className='support-panel'>
           <span className='eyebrow'>Canais</span>
-          <h2>Referencias rapidas</h2>
+          <h2>Referências rápidas</h2>
           <a href={supportLinks.apiDocsUrl} target='_blank' rel='noreferrer' className='primary-link'>Swagger UI</a>
           <a href={supportLinks.apiDocsJsonUrl} target='_blank' rel='noreferrer' className='secondary-link'>OpenAPI JSON</a>
-          <a href={supportLinks.mobileRepositoryUrl} target='_blank' rel='noreferrer' className='ghost-link'>Repositorio do app mobile</a>
-          <a href={supportLinks.backendRepositoryUrl} target='_blank' rel='noreferrer' className='ghost-link'>Repositorio da API</a>
-          <a href={supportLinks.repositoryUrl} target='_blank' rel='noreferrer' className='ghost-link'>Repositorio da central de ajuda</a>
+          <a href={supportLinks.mobileRepositoryUrl} target='_blank' rel='noreferrer' className='ghost-link'>Repositório do app mobile</a>
+          <a href={supportLinks.backendRepositoryUrl} target='_blank' rel='noreferrer' className='ghost-link'>Repositório da API</a>
+          <a href={supportLinks.repositoryUrl} target='_blank' rel='noreferrer' className='ghost-link'>Repositório da central de ajuda</a>
           <a href={`mailto:${supportLinks.supportEmail}`} className='ghost-link'>Falar com suporte</a>
         </aside>
       </section>
 
       <section className='section-block'>
         <div className='section-heading compact'>
-          <span className='eyebrow'>Mapa de conteudo</span>
-          <h2>Guias disponiveis</h2>
+          <span className='eyebrow'>Mapa de conteúdo</span>
+          <h2>Guias disponíveis</h2>
         </div>
         <div className='card-grid'>
           {topics.map((topic) => (
@@ -62,3 +62,5 @@ function SupportPage() {
 }
 
 export default SupportPage;
+
+

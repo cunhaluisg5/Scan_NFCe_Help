@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { supportLinks } from '../../content/helpContent';
 
 function ApiDocsPage() {
@@ -6,11 +6,11 @@ function ApiDocsPage() {
     <div className='page-stack'>
       <section className='section-block docs-hero'>
         <div className='section-heading compact'>
-          <span className='eyebrow'>Contrato tecnico</span>
-          <h1>Documentacao oficial da API</h1>
+          <span className='eyebrow'>Contrato técnico</span>
+          <h1>Documentação oficial da API</h1>
           <p>
-            Esta area conecta a central de ajuda funcional com a referencia tecnica da API do ecossistema Scan NFC-e.
-            Use o Swagger para validar payloads, testar autenticacao e compartilhar contratos com outros projetos.
+            Esta área conecta a central de ajuda à referência técnica da API do ecossistema Scan NFC-e.
+            Use o Swagger para validar payloads, testar autenticação e compartilhar contratos com outros projetos.
           </p>
         </div>
         <div className='hero-actions'>
@@ -24,7 +24,7 @@ function ApiDocsPage() {
           <span className='topic-label'>Quando usar</span>
           <h3>Casos mais comuns</h3>
           <ul>
-            <li>Validar o contrato de cadastro, login e recuperacao de senha.</li>
+            <li>Validar o contrato de cadastro, login e recuperação de senha.</li>
             <li>Inspecionar payload e resposta de captura de NFC-e.</li>
             <li>Conferir rotas protegidas por Bearer token.</li>
             <li>Comparar o app mobile e o reset web com o backend atual.</li>
@@ -32,12 +32,12 @@ function ApiDocsPage() {
         </article>
 
         <article className='topic-card'>
-          <span className='topic-label'>Boas praticas</span>
-          <h3>Como aproveitar melhor a documentacao</h3>
+          <span className='topic-label'>Boas práticas</span>
+          <h3>Como aproveitar melhor a documentação</h3>
           <ul>
             <li>Abra primeiro o Swagger UI para testar manualmente.</li>
             <li>Use o JSON OpenAPI quando quiser integrar outras ferramentas.</li>
-            <li>Mantenha esta URL alinhada ao ambiente real que esta sendo validado.</li>
+            <li>Mantenha esta URL alinhada ao ambiente real que está sendo validado.</li>
           </ul>
         </article>
       </section>
@@ -46,3 +46,4 @@ function ApiDocsPage() {
 }
 
 export default ApiDocsPage;
+

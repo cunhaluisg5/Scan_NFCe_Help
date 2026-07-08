@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 
 function NotFoundPage() {
@@ -6,12 +6,12 @@ function NotFoundPage() {
     <div className='page-stack'>
       <section className='section-block docs-hero'>
         <div className='section-heading compact'>
-          <span className='eyebrow'>Pagina nao encontrada</span>
-          <h1>Este caminho nao existe na central de ajuda</h1>
-          <p>Use os atalhos abaixo para voltar para uma area valida da documentacao.</p>
+          <span className='eyebrow'>Página não encontrada</span>
+          <h1>Este caminho não existe na central de ajuda</h1>
+          <p>Use os atalhos abaixo para voltar para uma área válida da documentação.</p>
         </div>
         <div className='hero-actions'>
-          <Link to='/' className='primary-link'>Voltar ao inicio</Link>
+          <Link to='/' className='primary-link'>Voltar ao início</Link>
           <Link to='/suporte' className='secondary-link'>Abrir suporte</Link>
         </div>
       </section>
@@ -20,3 +20,5 @@ function NotFoundPage() {
 }
 
 export default NotFoundPage;
+
+

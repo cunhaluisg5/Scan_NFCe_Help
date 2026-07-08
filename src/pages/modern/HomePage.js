@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import FlowPreview from '../../components/FlowPreview';
 import { faq, homeShowcase, quickActions, supportLinks, topics } from '../../content/helpContent';
@@ -8,13 +8,13 @@ function HomePage() {
     <div className='page-stack'>
       <section className='hero-panel'>
         <div className='hero-copy'>
-          <span className='eyebrow'>Ajuda orientada por tarefa</span>
-          <h1>Aprenda o Scan NFC-e do jeito que um usuario real precisa</h1>
+          <span className='eyebrow'>Central de ajuda</span>
+          <h1>Use o Scan NFC-e com mais clareza e segurança</h1>
           <p>
-            Esta central foi reorganizada para apoiar o uso do aplicativo do cadastro ate a leitura de NFC-e, a analise de gastos e a recuperacao de senha.
+            Encontre orientações para cadastro, leitura de NFC-e, análise de gastos, comparação de produtos e recuperação de senha.
           </p>
           <div className='hero-actions'>
-            <Link to='/guia/ler-nfce' className='primary-link'>Comecar pela leitura da nota</Link>
+            <Link to='/guia/ler-nfce' className='primary-link'>Começar pela leitura da nota</Link>
             <Link to='/suporte' className='secondary-link'>Abrir suporte e FAQ</Link>
           </div>
         </div>
@@ -30,7 +30,7 @@ function HomePage() {
         </div>
         <div className='metric-card metric-card--light'>
           <strong>Swagger</strong>
-          <span>Contrato tecnico integrado</span>
+          <span>Documentação técnica integrada</span>
         </div>
         <div className='metric-card metric-card--light'>
           <strong>FAQ</strong>
@@ -55,7 +55,7 @@ function HomePage() {
 
       <section className='section-block'>
         <div className='section-heading'>
-          <span className='eyebrow'>Biblioteca completa</span>
+          <span className='eyebrow'>Guias disponíveis</span>
           <h2>Navegue por cada fluxo do produto</h2>
         </div>
         <div className='topic-list'>
@@ -92,9 +92,9 @@ function HomePage() {
         </div>
 
         <aside className='support-panel'>
-          <span className='eyebrow'>Integracoes</span>
-          <h2>Documentacao e suporte tecnico</h2>
-          <p>Use estes atalhos para aprofundar a investigacao tecnica ou compartilhar referencias com quem esta implementando o ecossistema.</p>
+          <span className='eyebrow'>Integrações</span>
+          <h2>Documentação e suporte técnico</h2>
+          <p>Use estes atalhos para aprofundar a consulta técnica ou compartilhar referencias com quem esta implementando o ecossistema.</p>
           <a href={supportLinks.apiDocsUrl} target='_blank' rel='noreferrer' className='primary-link'>Abrir Swagger UI</a>
           <a href={supportLinks.apiDocsJsonUrl} target='_blank' rel='noreferrer' className='secondary-link'>Abrir OpenAPI JSON</a>
           <a href={`mailto:${supportLinks.supportEmail}`} className='ghost-link'>Enviar e-mail de suporte</a>
@@ -105,3 +105,5 @@ function HomePage() {
 }
 
 export default HomePage;
+
+

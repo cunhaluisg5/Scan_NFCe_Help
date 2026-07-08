@@ -1,36 +1,93 @@
 ﻿# Scan NFC-e Help
 
-Central de ajuda web do ecossistema Scan NFC-e, usada para orientar o usuario nas principais tarefas do aplicativo.
+Central de ajuda web do ecossistema Scan NFC-e. Este projeto reúne orientações por tarefa, FAQ, links técnicos e acesso à documentação oficial da API.
 
-## Responsabilidade
+## Visão geral
 
-- apresentar passo a passo das funcionalidades
-- servir como camada de apoio ao onboarding
-- apontar para documentacao tecnica e operacional
-- concentrar o acesso oficial a documentacao da API
+A central de ajuda foi pensada para apoiar quem usa e quem mantém o ecossistema:
 
-## Variaveis de ambiente
+- `Scan_NFCe`: fluxo principal do aplicativo mobile
+- `Scan_NFCe_Reset`: fluxo de redefinição de senha
+- `TCC_Backend`: documentação Swagger e contratos públicos da API
 
-Crie um `.env` a partir de `.env.example`.
+## Responsabilidades
 
-- `REACT_APP_HELP_REPOSITORY_URL`: URL publica do repositorio da ajuda
-- `REACT_APP_API_DOCS_URL`: URL do Swagger UI do backend
-- `REACT_APP_API_DOCS_JSON_URL`: URL do OpenAPI JSON do backend
+- orientar o usuário nas tarefas principais do aplicativo
+- organizar conteúdos por fluxo, sem depender de conhecimento técnico prévio
+- concentrar FAQ, suporte e referências oficiais
+- apontar para a documentação Swagger do backend
 
-## Scripts
+## Stack
+
+- React
+- React Router DOM
+- React Scripts
+- React Icons
+- Testing Library
+
+## Variáveis de ambiente
+
+Crie um arquivo `.env` a partir de `.env.example`.
+
+- `REACT_APP_HELP_REPOSITORY_URL`: URL pública deste repositório
+- `REACT_APP_API_DOCS_URL`: URL do Swagger UI
+- `REACT_APP_API_DOCS_JSON_URL`: URL do OpenAPI JSON
+- `REACT_APP_SUPPORT_EMAIL`: e-mail de suporte
+- `REACT_APP_APP_REPOSITORY_URL`: URL do repositório do app mobile
+- `REACT_APP_API_REPOSITORY_URL`: URL do repositório do backend
+
+## Pré-requisitos
+
+- Node.js compatível com o projeto
+- npm
+
+## Como executar localmente
 
 ```bash
 npm install
 npm start
-npm run build
-npm test
 ```
 
-## Estado atual da modernizacao
+Scripts úteis:
 
-Esta fase entrega:
+```bash
+npm start
+npm run build
+npm test
+npm run lint
+```
 
-- configuracao basica por ambiente
-- remocao de links hardcoded principais
-- documentacao inicial do projeto
-- pagina dedicada para a documentacao oficial da API
+## Estrutura do conteúdo
+
+- página inicial com atalhos para tarefas frequentes
+- guias por fluxo: cadastro, leitura, notas, análises, recuperação de senha e configurações
+- FAQ e canais de suporte
+- página dedicada para documentação da API
+
+## Testes e CI
+
+- testes de navegação e renderização com Testing Library
+- build validado em GitHub Actions
+- links de documentação centralizados por variável de ambiente
+
+## Troubleshooting
+
+- links do Swagger quebrados: revise `REACT_APP_API_DOCS_URL` e `REACT_APP_API_DOCS_JSON_URL`
+- conteúdo incoerente com o app: alinhe este repositório com o estado atual do mobile e do backend
+- rota não encontrada: use a navegação principal ou a página de suporte para retomar o fluxo
+
+## Publicação e operação
+
+- mantenha os links públicos atualizados por ambiente
+- revise o texto sempre a partir da interface real em produção
+- evite referências internas ao processo de modernização nas mensagens visíveis ao usuário
+
+## Capturas de tela
+
+Os prints antigos foram removidos para evitar documentação desatualizada. Quando necessário, adicione apenas capturas geradas pela versão atual da ajuda e do aplicativo.
+
+## Roadmap
+
+- adicionar capturas atuais do aplicativo principal
+- ampliar o conteúdo de FAQ conforme os testes reais de uso
+- evoluir a central de ajuda como referência oficial de onboarding

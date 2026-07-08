@@ -8,9 +8,9 @@ function ApiDocs() {
     <div style={{ color: '#FFF', padding: '2rem 3rem' }}>
       <h1 style={{ marginBottom: '1rem' }}>Documentacao da API</h1>
       <p style={{ lineHeight: '1.6', maxWidth: '900px' }}>
-        Esta secao centraliza a documentacao oficial do backend do ecossistema Scan NFC-e.
+        Esta seção centraliza a documentação oficial do backend do ecossistema Scan NFC-e.
         Use o Swagger para testar rotas, entender payloads, visualizar respostas esperadas
-        e validar os endpoints que integram o aplicativo mobile e o fluxo de recuperacao de senha.
+        e validar os endpoints que integram o aplicativo mobile e o fluxo de recuperação de senha.
       </p>
       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0' }}>
         <a href={apiDocsUrl} target="_blank" rel="noopener noreferrer" style={buttonStyle}>
@@ -21,12 +21,12 @@ function ApiDocs() {
         </a>
       </div>
       <div style={cardStyle}>
-        <h2 style={{ marginTop: 0 }}>Quando usar esta documentacao</h2>
+        <h2 style={{ marginTop: 0 }}>Quando usar esta documentação</h2>
         <ul style={{ lineHeight: '1.8' }}>
-          <li>validar o contrato de autenticacao e recuperacao de senha</li>
+          <li>validar o contrato de autenticação e recuperação de senha</li>
           <li>testar rotas protegidas com token Bearer</li>
           <li>conferir payload de cadastro e de NFC-e</li>
-          <li>inspecionar respostas esperadas para integracoes futuras</li>
+          <li>inspecionar respostas esperadas para integrações futuras</li>
         </ul>
       </div>
     </div>
@@ -58,3 +58,4 @@ const cardStyle = {
 };
 
 export default ApiDocs;
+
