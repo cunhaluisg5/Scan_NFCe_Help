@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import FlowPreview from '../../components/FlowPreview';
 import { faq, homeShowcase, quickActions, supportLinks, topics } from '../../content/helpContent';

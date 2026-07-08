@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { faq, supportLinks, topics } from '../../content/helpContent';
 
 function SupportPage() {
