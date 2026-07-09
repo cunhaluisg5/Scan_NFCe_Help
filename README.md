@@ -1,4 +1,4 @@
-﻿# Scan NFC-e Help
+# Scan NFC-e Help
 
 Central de ajuda web do ecossistema Scan NFC-e. Este projeto reúne orientações por tarefa, FAQ, links técnicos e acesso à documentação oficial da API.
 
@@ -57,6 +57,32 @@ npm test
 npm run lint
 ```
 
+## Docker
+
+A central de ajuda já pode ser servida em container como site estático, o que facilita homologação e publicação em qualquer host compatível com Docker.
+
+### Build manual da imagem
+
+```bash
+docker build \
+  --build-arg REACT_APP_API_DOCS_URL=http://localhost:3000/docs \
+  --build-arg REACT_APP_API_DOCS_JSON_URL=http://localhost:3000/docs.json \
+  --build-arg REACT_APP_SUPPORT_EMAIL=suporte@scan-nfce.local \
+  -t scan-nfce-help .
+```
+
+```bash
+docker run --rm -p 3001:80 scan-nfce-help
+```
+
+### Subida com Docker Compose
+
+```bash
+docker compose up --build
+```
+
+A central ficará disponível em `http://localhost:3001`.
+
 ## Estrutura do conteúdo
 
 - página inicial com atalhos para tarefas frequentes
@@ -75,12 +101,14 @@ npm run lint
 - links do Swagger quebrados: revise `REACT_APP_API_DOCS_URL` e `REACT_APP_API_DOCS_JSON_URL`
 - conteúdo incoerente com o app: alinhe este repositório com o estado atual do mobile e do backend
 - rota não encontrada: use a navegação principal ou a página de suporte para retomar o fluxo
+- links públicos incorretos no container: gere uma nova imagem quando variáveis `REACT_APP_*` forem alteradas
 
 ## Publicação e operação
 
 - mantenha os links públicos atualizados por ambiente
 - revise o texto sempre a partir da interface real em produção
 - evite referências internas ao processo de modernização nas mensagens visíveis ao usuário
+- publique a imagem em qualquer host compatível com Docker, Nginx ou serviço de container estático
 
 ## Capturas de tela
 

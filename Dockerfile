@@ -1,0 +1,32 @@
+FROM node:22-alpine AS builder
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci
+
+COPY . .
+
+ARG REACT_APP_HELP_REPOSITORY_URL=https://github.com/cunhaluisg5/Scan_NFCe_Help
+ARG REACT_APP_API_DOCS_URL=http://localhost:3000/docs
+ARG REACT_APP_API_DOCS_JSON_URL=http://localhost:3000/docs.json
+ARG REACT_APP_SUPPORT_EMAIL=suporte@scan-nfce.local
+ARG REACT_APP_APP_REPOSITORY_URL=https://github.com/cunhaluisg5/Scan_NFCe
+ARG REACT_APP_API_REPOSITORY_URL=https://github.com/cunhaluisg5/TCC_Backend
+
+ENV REACT_APP_HELP_REPOSITORY_URL=$REACT_APP_HELP_REPOSITORY_URL
+ENV REACT_APP_API_DOCS_URL=$REACT_APP_API_DOCS_URL
+ENV REACT_APP_API_DOCS_JSON_URL=$REACT_APP_API_DOCS_JSON_URL
+ENV REACT_APP_SUPPORT_EMAIL=$REACT_APP_SUPPORT_EMAIL
+ENV REACT_APP_APP_REPOSITORY_URL=$REACT_APP_APP_REPOSITORY_URL
+ENV REACT_APP_API_REPOSITORY_URL=$REACT_APP_API_REPOSITORY_URL
+
+RUN npm run build
+
+FROM nginx:1.29-alpine
+
+COPY --from=builder /app/build /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

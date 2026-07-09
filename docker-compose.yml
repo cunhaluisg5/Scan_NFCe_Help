@@ -1,0 +1,14 @@
+services:
+  scan-nfce-help:
+    build:
+      context: .
+      args:
+        REACT_APP_HELP_REPOSITORY_URL: ${REACT_APP_HELP_REPOSITORY_URL:-https://github.com/cunhaluisg5/Scan_NFCe_Help}
+        REACT_APP_API_DOCS_URL: ${REACT_APP_API_DOCS_URL:-http://localhost:3000/docs}
+        REACT_APP_API_DOCS_JSON_URL: ${REACT_APP_API_DOCS_JSON_URL:-http://localhost:3000/docs.json}
+        REACT_APP_SUPPORT_EMAIL: ${REACT_APP_SUPPORT_EMAIL:-suporte@scan-nfce.local}
+        REACT_APP_APP_REPOSITORY_URL: ${REACT_APP_APP_REPOSITORY_URL:-https://github.com/cunhaluisg5/Scan_NFCe}
+        REACT_APP_API_REPOSITORY_URL: ${REACT_APP_API_REPOSITORY_URL:-https://github.com/cunhaluisg5/TCC_Backend}
+    ports:
+      - "3001:80"
+    restart: unless-stopped
